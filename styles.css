@@ -18,6 +18,8 @@
     cursor: pointer;
 }
 
+/* Form controls */
+
 /* Header Styles */
 
 /* Display header content as a flex container with column direction, centered alignment, and text alignment */
@@ -65,6 +67,7 @@
 
 .input-group input.form-control::placeholder {
     width: 100%;
+   
     /* Add any additional styling for the placeholder */
 }
 
@@ -72,12 +75,23 @@
     display: flex;
     align-items: baseline; /* Align items on the baseline to prevent vertical shifting */
     width: 100%;
+   
 }
-
+/* Media query for screens with a minimum width of 768px (large screens) */
+@media screen and (min-width: 768px) {
+    .input-group input.form-control {
+        width: 100%; /* Set the width to 100% on larger screens */
+        max-width: 400px; /* Set a maximum width if needed */
+    }
+    .position{
+        position: relative;
+        right: 100px;
+    }
+}
 .input-group input.form-control {
     flex: 1; /* Allow the input to grow and take available space */
     width: 300%; /* Increase the width as needed */
-    
+    box-shadow: none;
     /* Add any additional styling for the input */
 }
 
