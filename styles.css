@@ -1,92 +1,160 @@
+/* Navigation Styles */
+
+/* Set the height of the navigation bar */
 .nav-height {
     height: 4.5rem;
 }
 
-/* Add this in your styles.css file */
-.logo-img {
-    max-width: 150px;
-    max-height: 100px;
-    margin-left: 7% !important; /* Adjust this value as needed */
-    cursor: pointer;
-}
-/* Background color */
+/* Set the background color of the navigation bar */
 .background-color {
     background-color: rgb(0, 173, 219) !important;
 }
-@media screen and (min-width: 40em) {
-    .jdpxj {
-        background-image: url(https://pricespy-75b8.kxcdn.com/g/rfe/landing-page/hero-search-and-stars.png);
-        width: 100%;
-        max-width: 980px;
-        height: 270px; /* Adjust the height as needed */
-        display: flex;
-        justify-content: center;
-        background-size: cover;
-        background-position: center center;
-        margin: 0.5rem auto auto;
-        margin-left: 9.5%; /* Adjust the left margin as needed */
-        padding: 1.5rem;
-        flex-wrap: wrap;
-    }
-}
-/* for text */
-@media screen and (min-width: 40em)
-{
-.kGJdnT {
-    margin-bottom: 1rem;
-}
+
+/* Set the maximum width, maximum height, margin, and cursor for the logo image */
+.logo-img {
+    max-width: 150px;
+    max-height: 100px;
+    margin-left: 7% !important;
+    cursor: pointer;
 }
 
-.kGJdnT {
-    white-space: pre;
+/* Header Styles */
+
+/* Display header content as a flex container with column direction, centered alignment, and text alignment */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-@media screen and (min-width: 39.9376em)
-{
-.hEvqSi {
-    font-size: 2rem;
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-}
+/* Hero Section Styles */
+
+/* Default styling for .jdpxj or styling for screens smaller than 40em */
+/* Hero Section Styles */
+
+.jdpxj {
+    /* Existing styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Align items at the bottom */
 }
 
 .hEvqSi {
-    flex: 1 1 auto;
+    /* Existing styles */
+    margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+/* New styles for the search bar */
+.row {
+    margin-top: auto; /* Push the row to the bottom of the container */
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Your existing styles... */
+
+/* Your existing styles... */
+
+/* Your existing styles... */
+
+.input-group input.form-control::placeholder {
+    width: 100%;
+    /* Add any additional styling for the placeholder */
+}
+
+.input-group {
+    display: flex;
+    align-items: baseline; /* Align items on the baseline to prevent vertical shifting */
+    width: 100%;
+}
+
+.input-group input.form-control {
+    flex: 1; /* Allow the input to grow and take available space */
+    width: 300%; /* Increase the width as needed */
+    
+    /* Add any additional styling for the input */
+}
+
+.input-group button.btn {
+    /* Add any additional styling for the button */
+}
+
+/* Your existing styles... */
+
+
+/* Media query for screens with a minimum width of 40em (640px) */
+@media screen and (min-width: 326px) {
+    /* Styling for the hero section */
+   /* Default styles for larger screens (min-width: 326px) */
+.jdpxj {
+    background-image: url(https://pricespy-75b8.kxcdn.com/g/rfe/landing-page/hero-search-and-stars.png);
+    width: 100%;
+    max-width: 980px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5rem auto auto;
+    margin-left: 9.5%;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hEvqSi {
     user-select: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: -0.01em;
     line-height: 1.3333;
     font-weight: 700;
     color: inherit;
     opacity: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+    white-space: nowrap; 
 }
 
-h1 {
-    font-weight: 600;
-    font-size: 4.00000rem;
-}
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-h1 {
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+.hEvqSi span {
+    display: block; /* Display the span element as a block */
 }
 
-body {
-    margin: 0;
-    font-size: 0.875rem;
-    font-family: Mulish,Helvetica Neue,Helvetica,Arial,Roboto,sans-serif;
-    background: rgba(255,255,255,1);
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgba(5,30,46,1);
-    -webkit-font-smoothing: antialiased;
+/* Media query for screens with a maximum width of 39.9376em (small screens) */
+@media screen and (max-width: 39.9376em) {
+    .jdpxj {
+        width: 100%; /* Set width to 100% on small screens */
+        margin-left: 0; /* Remove left margin to make it full width */
+        padding: 1rem; /* Adjust padding as needed */
+        margin: 0;
+    }
+
+    .hEvqSi {
+        white-space: pre;
+        text-align: center;
+    }
 }
+}
+@media screen and (max-width: 39.9375em)
+{
+.kGJdnT {
+    white-space: initial;
+    margin-bottom: 1rem;
+}
+
+}
+.kGJdnT {
+    white-space: pre;
+    text-align: center;
+}
+/* Your existing styles for other elements... */
+/* Add or modify styles as needed for other screen sizes */
+
+
 .isnJoq {
     color: rgba(255, 255, 255, 0.72);
     font-weight: 600;
@@ -99,6 +167,39 @@ body {
     margin-left: 0.5rem;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+
+/* General Styles */
+body {
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: Mulish, Helvetica Neue, Helvetica, Arial, Roboto, sans-serif;
+    background: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(5, 30, 46, 1);
+    -webkit-font-smoothing: antialiased;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 4.00000rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .logo-img {
+        margin-left: 0;
+    }
+}
+/* Add a media query for larger screens */
