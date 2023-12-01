@@ -104,6 +104,7 @@
 
 /* Media query for screens with a minimum width of 40em (640px) */
 @media screen and (min-width: 326px) {
+    
     /* Styling for the hero section */
    /* Default styles for larger screens (min-width: 326px) */
 .jdpxj {
@@ -152,6 +153,7 @@
         text-align: center;
     }
 }
+    
 }
 @media screen and (max-width: 39.9375em)
 {
@@ -249,3 +251,4 @@ h1 {
     background-color: #ccc;
     transform: scale(1.02); /* Scale up on hover */
   }
+
