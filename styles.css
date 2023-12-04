@@ -1,3 +1,9 @@
+/* Mobile :320px. */
+@media (max-width: 767px) {
+  h1 {
+   font-size: 24px !important;
+  }
+}
 .rem-underline{
   text-decoration: none !important;
 }
