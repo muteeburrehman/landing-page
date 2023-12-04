@@ -1,6 +1,12 @@
+.rem-underline{
+  text-decoration: none !important;
+}
 /* Additional Styles for Dropdown */
 @media screen and (max-width: 39.9376em) {
-
+      
+    .nav-position{
+      margin-left: 10px;
+    }
     .logo-position{
         margin-right: 36% !important;
     }
